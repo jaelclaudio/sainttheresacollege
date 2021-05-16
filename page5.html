@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.css">
+
+
+  
+
+  </style>
+</head>
+<body>
+
+
+  <div class="topnav" id="myTopnav">
+    <div class="col-s-5">  <img src="pic/logo.png" id="logo"  style="float: left; "/></div> 
+    <a href="index.html"   style="margin-top: 0.8%;font-size: 15px;float: left; " > <b>St. Theresa College <br>of Tandag, Inc.</b></a>
+    <a href="index.html" style="text-align: center; margin: 1%; font-size: 24px;clear: both;">Home</a>
+    <a href="gallery.html" style="text-align: center; margin: 1%;font-size: 24px;">Gallery</a>
+    <a href="page6.html" style="text-align: center; margin: 1%;font-size: 24px;">Contact</a>
+    <a href="page5.html" style="text-align: center; margin: 1%;font-size: 24px;">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+    
+  
+  
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+
+<div class="row"  >
+ 
+ 
+  <div class="column side">
+    
+      <div class="card">
+      
+       <myMenu>  
+        <h1>Program</h1>
+        <ul>
+      
+        <li><h3><a href="page1.html">Elementary</a></h3></li>
+        <li><h3><a href="page2.html">Highschool</a></h3></li>
+        <li><h3><a href="page3.html">Senior HighSchool</a></h3></li>
+        <li><h3><a href="page4.html">College</a></h3></li>
+        </ul>
+       </myMenu>
+       
+     </div></div>
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>About us >><a href="history.html"> History</a> </h1>
+        
+    </div>
+
+    <div class="card">
+        <div class="container ">
+        <div class="images ">
+          <img class="myImages" id="myImg" src="pic/vision-mod-786x442.jpg"  style="width:100%;max-width:300px">
+
+          <!-- The Modal -->
+     
+            <h2>Our vision</h2>
+            <p style="  padding: 1px 20px;">Saint Theresa College of Tandag, Inc. is a highly committed Catholic Professional Institution responsive to local and global realities.            </p>
+        </div>
+          
+      
+        <div class="images">
+           <img class="myImages" id="myImg" src="pic/mission-mod-786x442.jpg" style="width:100%;max-width:300px">
+
+        
+      
+            <h2>Our Mission</h2>
+       
+            <p  style="  padding: 1px 20px;">Saint Theresa College of Tandag, Inc. shall provide Academic and Spiritual education driven by relevant and innovative instruction, research, extension and production for total human development.            </p>
+          </div>
+         
+          <div class="images">
+            <img class="myImages" id="myImg" src="pic/DSC_0436-scaled-1024x683.jpg"  style="width:100%;max-width:300px">
+
+            <h2>Core Biliefs</h2>
+            <p  style="  padding: 1px 20px;">Saint Theresa College of Tandag, Inc. commits itself to provide academic and spiritual education through effective curricular programs and instruction; inculcate a strong empirical research culture and highly sustainable community extension; produce technologically skilled and morally upright graduates with a sense of responsible leadership for social transformation; uplift the condition of the underprivileged through community development programs and projects espoused by the institution, and strengthen linkages and collaboration with industry partners, community and other
+            </p>
+            </div>
+          
+         
+            <div class="image">
+                <img  class="myImages" id="myImg" src="pic/20161120_134743-scaled-1024x576.jpg" style="width: 380px;;height:auto">
+            <h2>Pupil Care</h2>
+            <p  style="  padding: 1px 20px;">Accepts applications from prospective parents throughout the year and those interested are encouraged to contact the school by way of telephone or e-mail by using the contact form to get information. In order to gain more insight into our program, parents should attend.
+            </p>    
+            <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          </div>   
+          </div>
+ </div>
+
+ <script>
+var modal = document.getElementById('myModal');
+var images = document.getElementsByClassName('myImages');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+  </script>
+</div></div>
+
+
+ <div class="footer">
+
+    <h3>Ready to start your school tour? </h3>
+    <a href="#" style="float: right; margin-right: 1%;" >Schedule a tour</a>    
+    <a style="float: right; margin-right: 1%;">or</a>
+    <a href="#" style="float: right; margin-right: 1%;">Visit</a>
+  </div>
+  
+
+</body>
+</html>

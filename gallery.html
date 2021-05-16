@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+
+
+
+  <div class="topnav" id="myTopnav">
+    <div class="col-s-5">  <img src="pic/logo.png" id="logo"  style="float: left; "/></div> 
+    <a href="index.html"   style="margin-top: 0.8%;font-size: 15px;float: left; " > <b>St. Theresa College <br>of Tandag, Inc.</b></a>
+  
+    <a href="index.html" style="text-align: center; margin: 1%; font-size: 24px;clear: both;">Home</a>
+    <a href="gallery.html" style="text-align: center; margin: 1%;font-size: 24px;">Gallery</a>
+    <a href="page6.html" style="text-align: center; margin: 1%;font-size: 24px;">Contact</a>
+    <a href="page5.html" style="text-align: center; margin: 1%;font-size: 24px;">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<div class="row">
+ 
+ 
+  <div class="column side">
+    
+      <div class="card">
+        
+       <myMenu>  
+        <h1>Program</h1>
+        <ul>
+      
+        <li><h3><a href="page1.html">Elementary</a></h3></li>
+        <li><h3><a href="page2.html">Highschool</a></h3></li>
+        <li><h3><a href="page3.html">Senior HighSchool</a></h3></li>
+        <li><h3><a href="page4.html">College</a></h3></li>
+        </ul>
+       </myMenu>
+       
+     </div></div>
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>Gallery</h1>
+      
+    </div>
+
+ <div class="card">
+   <h2>Holy Mass</2>
+    <div class="slideshow-container">
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">1 / 3</div>
+    <center>   <img class="myImages" id="myImg" src="Gallery/Holly Mass/37488306_1840232119401857_1053470059399217152_n.jpg" style="width:70%"></center>   
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 3</div>
+  <center>        <img class="myImages" id="myImg" src="Gallery/Holly Mass/37585445_1840233302735072_739294627625959424_n.jpg" style="width:70%"></center>
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">3 / 3</div>
+    <center>      <img class="myImages" id="myImg" src="Gallery/Holly Mass/37615314_1840233852735017_8669337885784145920_n.jpg" style="width:70%"></center>
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot1" onclick="currentSlide1(1)"></span> 
+          <span class="dot1" onclick="currentSlide1(2)"></span> 
+          <span class="dot1" onclick="currentSlide1(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides1(slideIndex);
+        
+        function plusSlides1(n) {
+          showSlides1(slideIndex += n);
+        }
+        
+        function currentSlide1(n) {
+          showSlides1(slideIndex = n);
+        }
+        
+        function showSlides1(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides1");
+          var dots = document.getElementsByClassName("dot1");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+    <div class="card">
+        <h2>Celebrating 103 founding anniversary: Field Demo</h2>
+
+       
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+  <center> <img class="myImages" id="myImg"  src="Gallery/71258350_110425260362576_4357780093192372224_n.jpg" style="width:60%"></center> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <center>  <img class="myImages" id="myImg" src="Gallery/71259952_110424773695958_7416208300171067392_n.jpg" style="width:60%"></center> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <center>  <img  class="myImages" id="myImg" src="Gallery/71470764_110425017029267_8543596606455283712_n.jpg" style="width:60%"></center> 
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <center>  <img class="myImages" id="myImg" src="Gallery/71522712_110426680362434_4704807549424107520_n.jpg" style="width:60%"></center> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <center>  <img class="myImages" id="myImg" src="Gallery/71756159_110424890362613_1370071318766026752_n.jpg" style="width:60%"></center> 
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <center> <img class="myImages" id="myImg" src="Gallery/71806693_110425753695860_903433640430534656_n.jpg" style="width:60%"></center> 
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71258350_110425260362576_4357780093192372224_n.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71259952_110424773695958_7416208300171067392_n.jpg" style="width:100%" onclick="currentSlide(2)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71470764_110425017029267_8543596606455283712_n.jpg" style="width:100%" onclick="currentSlide(3)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71522712_110426680362434_4704807549424107520_n.jpg" style="width:100%" onclick="currentSlide(4)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71756159_110424890362613_1370071318766026752_n.jpg" style="width:100%" onclick="currentSlide(5)" alt="  ">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Gallery/71806693_110425753695860_903433640430534656_n.jpg" style="width:100%" onclick="currentSlide(6)" alt=" ">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    </div>
+
+
+  <div class="card">
+    <h2>More</h2>
+    <div class="container">
+      
+      <div class="column1">
+   
+       <img class="myImages" id="myImg"  src="pic/history-school2.png" style="width:100%">
+      </div>
+    
+      <div class="column1">
+     
+   <img class="myImages" id="myImg"  src="pic/phl-ched-connect-640x410.png" style="width:100%;">
+      </div>
+    
+      <div class="column1">
+     
+    <img class="myImages" id="myImg"  src="pic/single-class.png" style="width:100%">
+      </div>
+        
+      <div class="column1">
+      
+   <img  class="myImages" id="myImg" src="pic/37752288_1842128725878863_8964532474096910336_n.png" style="width:100%">
+      </div>
+    
+      <div class="column1">
+    
+      <img class="myImages" id="myImg"  src="pic/71185285_110426110362491_1746005322239049728_n.png" style="width:100%">  
+      </div>
+        
+      <div class="column1">
+      
+   <img class="myImages" id="myImg" src="pic/71213655_110425937029175_8483455936051019776_n.png" style="width:100%">
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+  </div>
+
+  <script>
+    var modal = document.getElementById('myModal');
+    var images = document.getElementsByClassName('myImages');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+    
+      img.onclick = function(evt) {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+      </script>
+    
+
+   
+  
+<div class="footer">
+
+  <h3>Ready to start your school tour? </h3>
+  <a href="#" style="float: right; margin-right: 1%;" >Schedule a tour</a>    
+  <a style="float: right; margin-right: 1%;">or</a>
+  <a href="#" style="float: right; margin-right: 1%;">Visit</a>
+</div>
+
+
+
+</body>
+</html>
